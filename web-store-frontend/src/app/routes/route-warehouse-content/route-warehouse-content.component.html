@@ -1,0 +1,17 @@
+<div class="ui fluid container" id="spacing" align="center">
+  <div class="ui fluid container" align="right">
+    <div class="ui search">
+      <div class="ui icon input" id="wide">
+        <input id="myInput" class="prompt" type="text">
+        <i class="search icon"></i>
+      </div>
+      <div class="results"></div>
+    </div>
+  </div>
+
+  <div class="ui fluid container" id="spacing" style="width: 80%">
+    <app-product *ngFor = "let producto of products"
+      [product] = "producto.producto"
+      [stock] = "producto.stock"></app-product>
+  </div>
+</div>

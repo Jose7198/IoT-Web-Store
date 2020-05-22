@@ -1,0 +1,14 @@
+
+<div class="ui fluid container segment" id="spacing">
+  <app-product-sale *ngFor="let detail of details"
+    [producto] = "detail.producto"
+    [cantidad] = "detail.cantidad"
+    [bodega] = "bodega"></app-product-sale>
+</div>
+
+<footer>
+  <div class="ui container">
+    <h1>Total: $ {{total}}</h1>
+  </div>
+  <div class="ui hidden divider"></div>
+</footer>
